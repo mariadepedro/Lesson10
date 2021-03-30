@@ -1,21 +1,66 @@
     /* General styles
 ------------------------------------*/
 
+div {
+    text-align: center;
+}
+
+@font-face {
+    font-family: embeddedFont;
+    src: url(LemonMilk.otf);
+  }
+
+  .me {
+  border-radius: 50%;
+  }
+body {
+    background-color: snow;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: darkgrey;
+}
+
+h1 {
+  font-weight: bold;
+  font-family: embeddedFont;
+    font-size: xx-large;
+    text-align: center;
+    color:rgb(30, 29, 29);
+}
+
+h2 {
+  font-weight: bold;
+  font-family: embeddedFont;
+    font-size: x-large;
+    color:rgb(30, 29, 29);
+}
+
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding-top: 20px;
     text-align: center;
   }
   
   li {
     display: inline;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 25px;
     padding: 10px;
+    color: violet;
   }
-
+  a:link {
+    text-decoration: none;
+    color: violet;
+}
+a:hover {
+    text-decoration: none;
+    color: white;
+}
   nav {
     display: block;
   }
@@ -28,7 +73,7 @@ ul {
 ------------------------------------*/
     
   .div2 {
-    background: hotpink;
+    background: #FFD7C6;
     padding: 20px; 
     width: 200px;
     height: 400px;
@@ -36,13 +81,13 @@ ul {
   }
 
   .div3 {
-    background:lightcoral;
+    background:#D0E2FF ;
   }
   .div4 {
-    background: cornflowerblue;
+    background: #FFD6E8;
   }
   .div5 {
-    background:rgb(32, 139, 0);
+    background: #FFF2C7;
   }
 
   .div3, .div4, .div5 {
@@ -50,23 +95,20 @@ ul {
     padding: 20px; 
     width: 200px;
     height: 400px;
+    text-align: center;
   }
 
-  img {
-    max-width: 100%;
-    height: auto;
-    position: relative;
-  }
   /* footer
 ------------------------------------*/
   
   footer {
-    background:violet;
+    background:#E8DAFF;
     height: 60px;  /* footer height */
     padding-top: 20px;
     display: block;
     margin-top: 20px; /* space between content and footer */
     width: 100%;
+    text-align: center;
   }
 
   /* Media Queries
@@ -87,14 +129,14 @@ ul {
         .div6 { grid-area: 3 / 1 / 4 / 5; } 
     
         .div1 {
-            background: pink;
+            background:#E8DAFF;
             height: 60px;  /* nav height */
             width: 100%;
           }
 
     .div2 {
         border-radius: 150px;
-        background: hotpink;
+        background: #FFD7C6;
         padding: 20px; 
         width: 250px;
         height: 400px;
@@ -105,6 +147,7 @@ ul {
         padding: 20px; 
         width: 300px;
         height: 400px;
+        text-align: center; 
       }
     } 
   @media screen and (max-width:775px) {
@@ -116,15 +159,20 @@ ul {
         grid-row-gap: 0px; 
         }
         
+        li {
+            display: inline;
+            font-size: 20px;
+            margin: 10px;
+            padding: 5px;
+          }
 
    .div1 {
-            background: pink;
+            background: #E8DAFF;
             height: 60px;  /* div height */
             width: 775px;
           }
   .div2 {
     border-radius: 0px;
-    background: hotpink;
     width: 775px;
     height: 300px;
   }
@@ -137,19 +185,9 @@ ul {
   }
 
   .div6 {
-    background: violet;
     width: 775px;
     height: 100px;
   }
 
-
-  img {
-    height: auto;
-    display: block;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-    object-fit: cover;
-
   }
- }
+
